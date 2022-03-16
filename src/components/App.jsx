@@ -4,20 +4,13 @@ import Statistics from './statistics/Statistics';
 import data from './statistics/data';
 import FriendList from './friends/FriendList';
 import friends from './friends/friends';
+import TransactionHistory from './transactions/TransactionsHistory';
+import transactions from './transactions/transactions';
+import { Container } from './App.styled';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        // height: '100vh',
-        display: 'bloc',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        textTransform: 'uppercase',
-        color: '#010101',
-      }}
-    >
+    <Container>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -28,6 +21,7 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />;
       <Statistics stats={data} />;
       <FriendList friends={friends} />
-    </div>
+      <TransactionHistory items={transactions} />;
+    </Container>
   );
 };
