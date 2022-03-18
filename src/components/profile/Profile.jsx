@@ -6,6 +6,8 @@ import {
   ProfileName,
   ProfileDescription,
   ProfileList,
+  ProfileItem,
+  ProfileText,
 } from './Profile.styled';
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
@@ -19,18 +21,18 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
       </Description>
 
       <ProfileList>
-        <li>
-          <span class="label">Followers</span>
-          <span class="quantity">{stats.followers}</span>
-        </li>
-        <li>
-          <span class="label">Views</span>
-          <span class="quantity">{stats.views}</span>
-        </li>
-        <li>
-          <span class="label">Likes</span>
-          <span class="quantity">{stats.likes}</span>
-        </li>
+        <ProfileItem>
+          <ProfileText class="label">Followers</ProfileText>
+          <ProfileText class="quantity">{stats.followers}</ProfileText>
+        </ProfileItem>
+        <ProfileItem>
+          <ProfileText class="label">Views</ProfileText>
+          <ProfileText class="quantity">{stats.views}</ProfileText>
+        </ProfileItem>
+        <ProfileItem>
+          <ProfileText class="label">Likes</ProfileText>
+          <ProfileText class="quantity">{stats.likes}</ProfileText>
+        </ProfileItem>
       </ProfileList>
     </ProfileSection>
   );

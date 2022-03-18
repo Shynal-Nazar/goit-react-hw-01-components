@@ -1,9 +1,7 @@
 import styled from '@emotion/styled';
 
 export const ProfileSection = styled.div`
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 252px;
+  width: 400px;
   border: 2px solid #9e9e9e;
   border-radius: 4px;
 `;
@@ -23,8 +21,8 @@ export const ProfileFoto = styled.img`
 `;
 
 export const ProfileName = styled.p`
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 900;
   color: #212121;
 `;
 
@@ -36,4 +34,22 @@ export const ProfileDescription = styled.p`
 
 export const ProfileList = styled.ul`
   display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`;
+
+export const ProfileItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% / 3);
+  text-align: center;
+  background-color: yellow;
+  padding: 10px 10px;
+  border: 1px solid #9e9e9e;
+`;
+
+export const ProfileText = styled.span`
+  color: blue;
+  font-weight: 900;
 `;
