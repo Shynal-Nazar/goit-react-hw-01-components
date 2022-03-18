@@ -10,13 +10,11 @@ import {
 const Statistics = ({ title, stats }) => {
   return (
     <StatisticsSection>
-      {title && (
-        <StatisticsSectionName className={title}>{title}</StatisticsSectionName>
-      )}
+      {title && <StatisticsSectionName>{title}</StatisticsSectionName>}
 
-      <StatisticsList class="stat-list">
+      <StatisticsList>
         {stats.map(stat => (
-          <StatisticsItem key={stat.id} class="item">
+          <StatisticsItem key={stat.id}>
             <StatisticsText>{stat.label}</StatisticsText>
             <StatisticsText>{stat.percentage + '%'}</StatisticsText>
           </StatisticsItem>

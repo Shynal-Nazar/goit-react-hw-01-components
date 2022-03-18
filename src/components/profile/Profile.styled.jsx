@@ -5,6 +5,7 @@ export const ProfileSection = styled.div`
   border: 2px solid #9e9e9e;
   border-radius: 4px;
 `;
+
 export const Description = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;

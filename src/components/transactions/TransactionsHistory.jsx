@@ -7,7 +7,7 @@ import {
 
 const TransactionHistory = ({ items }) => {
   return (
-    <TransactionTable class="transaction-history">
+    <TransactionTable>
       <TableThead>
         <tr>
           <th>Type</th>

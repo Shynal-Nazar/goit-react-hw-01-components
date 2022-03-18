@@ -14,7 +14,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <ProfileSection>
       <Description>
-        <ProfileFoto src={avatar} alt="User avatar" class="avatar" />
+        <ProfileFoto src={avatar} alt="User avatar" />
         <ProfileName>{username}</ProfileName>
         <ProfileDescription>{tag}</ProfileDescription>
         <ProfileDescription>{location}</ProfileDescription>
@@ -22,16 +22,16 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
 
       <ProfileList>
         <ProfileItem>
-          <ProfileText class="label">Followers</ProfileText>
-          <ProfileText class="quantity">{stats.followers}</ProfileText>
+          <ProfileText>Followers</ProfileText>
+          <ProfileText>{stats.followers}</ProfileText>
         </ProfileItem>
         <ProfileItem>
-          <ProfileText class="label">Views</ProfileText>
-          <ProfileText class="quantity">{stats.views}</ProfileText>
+          <ProfileText>Views</ProfileText>
+          <ProfileText>{stats.views}</ProfileText>
         </ProfileItem>
         <ProfileItem>
-          <ProfileText class="label">Likes</ProfileText>
-          <ProfileText class="quantity">{stats.likes}</ProfileText>
+          <ProfileText>Likes</ProfileText>
+          <ProfileText>{stats.likes}</ProfileText>
         </ProfileItem>
       </ProfileList>
     </ProfileSection>

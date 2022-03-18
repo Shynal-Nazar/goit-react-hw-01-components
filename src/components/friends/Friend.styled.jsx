@@ -39,13 +39,17 @@ export const StatusOnline = styled.span`
   height: 15px;
   border-radius: 50%;
   background-color: ${props => {
-    switch (props.status) {
-      case true:
-        return 'green';
-      case false:
-        return 'red';
-      default:
-        return 'black';
-    }
+    return props.status ? 'green' : 'red';
   }};
 `;
+
+//----------------Аналог тернарника---------//
+
+// switch (props.status) {
+//   case true:
+//     return 'green';
+//   case false:
+//     return 'red';
+//   default:
+//     return 'black';
+// }
